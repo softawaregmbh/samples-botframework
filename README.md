@@ -12,6 +12,7 @@ Was wird für die Entwicklung eines Bots benötigt?
 
 ## Dialogbasierte Bot-Entwicklung 
 Die dialogbasierte Entwicklung bietet mehr Möglichkeiten für individuelle Konversationen.
+
 [mehr](dialog.md)
 
 ## LUIS
@@ -21,9 +22,10 @@ LUIS (Language Understanding Intelligent Service) ist ein Teil der [Microsoft Co
 
 ## Veröffentlichung von Bots
 Anleitung zur Registrierung und Veröffentlichung eines Bots.
+
 [mehr](registration.md)
 
 ## Channels
-Ein Bot kann in verschiedensten Kommunikations-Channels veröffentlicht werden
+Ein Bot kann in verschiedensten Kommunikations-Channels veröffentlicht werden.
 
 [mehr](channels.md)
