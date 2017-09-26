@@ -24,6 +24,6 @@ Beim Klick auf **Web Chat** erhalten Sie einen fertigen Code zur Einbindung des 
 
 ## Weitere Channels
 
-Experimentieren Sie mit den zusätzlich verfügbaren Channels - die meisten sind relativ einfach zu konfigurieren.
+Experimentieren Sie mit den zusätzlich verfügbaren Channels - die meisten sind relativ einfach zu konfigurieren. Die einzelnen Darstellungen können Sie auch mit dem [Channel Inspector](https://docs.botframework.com/en-us/channel-inspector/channels/Facebook?f=Channeldata&e=example1) simulieren.
 
 ![Channel-Auswahl](images/channels.png)

@@ -94,3 +94,5 @@ responseMessage.Attachments.Add(card.ToAttachment());
 ```
 
 ![HeroCard](images/herocard.png)
+
+Die einzelnen Darstellungen auf den verschiedenen Channels können Sie auch mit dem [Channel Inspector](https://docs.botframework.com/en-us/channel-inspector/channels/Facebook?f=Channeldata&e=example1) simulieren.
