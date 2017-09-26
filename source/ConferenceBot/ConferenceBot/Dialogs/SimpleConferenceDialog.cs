@@ -27,7 +27,24 @@ namespace ConferenceBot.Dialogs
                     await Task.Delay(3000);
 
                     var responseMessage = context.MakeMessage();
-                    responseMessage.Text = $"In Raum {query.Room} findet ein Lab über das Bot Framework statt.";
+                    //responseMessage.Text = $"In Raum {query.Room} findet ein Lab über das Bot Framework statt.";
+
+                    var card = new HeroCard()
+                    {
+                        Title = "Microsoft Bot Framework",
+                        Subtitle = "Roman Schacherl",
+                        Text = $"In Raum {query.Room} findet ein Lab über das Bot Framework statt.",
+                        Images = new List<CardImage>()
+                        {
+                            new CardImage()
+                            {
+                                Url = "https://basta.net/wp-content/uploads/2016/03/160920-091311-basta2016-107-1500px.jpg",
+                                Tap = new CardAction(ActionTypes.OpenUrl, "Open", null, "https://www.basta.net")
+                            }
+                        }
+                    };
+
+                    responseMessage.Attachments.Add(card.ToAttachment());
 
                     await context.PostAsync(responseMessage);
                 })

@@ -164,7 +164,7 @@ Auch mittels Attributen über den einzelnen Properties kann Einfluss genommen we
 public string Time { get; set; }
 ```
 ### Version 3: Hero Cards
-Anstatt einer Textnachricht könnte am Schluss auch eine *HeroCard* angezeigt werden.
+Anstatt einer Textnachricht könnte am Schluss auch eine *HeroCard* angezeigt werden. Weitere Attachments finden Sie unter [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
 
 ```cs
 var card = new HeroCard()
@@ -184,3 +184,6 @@ var card = new HeroCard()
 
 responseMessage.Attachments.Add(card.ToAttachment());
 ```
+
+![HeroCard](images/herocard.png)
+
