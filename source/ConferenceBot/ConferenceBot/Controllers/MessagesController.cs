@@ -23,7 +23,9 @@ namespace ConferenceBot
                 //await Conversation.SendAsync(activity,
                 //    () => Chain.From(() => FormDialog.FromForm(SimpleConferenceDialog.BuildForm)));
                 
-                await Conversation.SendAsync(activity, () => new Dialogs.AdvancedConferenceDialog());
+                //await Conversation.SendAsync(activity, () => new Dialogs.AdvancedConferenceDialog());
+
+                await Conversation.SendAsync(activity, () => new Dialogs.LuisConferenceDialog());
             }
             else
             {
