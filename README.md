@@ -4,5 +4,5 @@
 * [SimpleConferenceBot mit FormFlow](formflow.md)
 * [AdvancedConferenceDialog](dialog.md)
 * [LuisDialog](luis.md)
-* [Registrierung](registration.md)
+* [Veröffentlichung](registration.md)
 * [Channels](channels.md)
