@@ -90,27 +90,3 @@ Auch mittels Attributen über den einzelnen Properties kann Einfluss genommen we
 public string Time { get; set; }
 ```
 
-
-## Version 3: Hero Cards
-Anstatt einer Textnachricht könnte am Schluss auch eine *HeroCard* angezeigt werden. Weitere Attachments finden Sie unter [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
-
-```cs
-var card = new HeroCard()
-{
-    Title = "Microsoft Bot Framework",
-    Subtitle = "Roman Schacherl",
-    Text = $"In Raum {query.Room} findet ein Lab über das Bot Framework statt.",
-    Images = new List<CardImage>()
-    {
-        new CardImage()
-        {
-            Url = "https://api-summit.de/wp-content/uploads/2017/03/API_Summit-3914.jpg",
-            Tap = new CardAction(ActionTypes.OpenUrl, "Open", null, "https://www.api-summit.de")
-        }
-    }
-};
-
-responseMessage.Attachments.Add(card.ToAttachment());
-```
-
-![HeroCard](images/herocard.png)

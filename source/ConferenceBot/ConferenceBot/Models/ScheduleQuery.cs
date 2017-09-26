@@ -13,6 +13,8 @@ namespace ConferenceBot.Models
 
         public Room? Room { get; set; }
 
+        public string Talk { get; set; }
+
         [Prompt("Please enter the begin time of the talk")]
         public string Time { get; set; }
     }

@@ -20,10 +20,10 @@ namespace ConferenceBot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                //await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
-
-                await Conversation.SendAsync(activity,
-                    () => Chain.From(() => FormDialog.FromForm(SimpleConferenceDialog.BuildForm)));
+                //await Conversation.SendAsync(activity,
+                //    () => Chain.From(() => FormDialog.FromForm(SimpleConferenceDialog.BuildForm)));
+                
+                await Conversation.SendAsync(activity, () => new Dialogs.AdvancedConferenceDialog());
             }
             else
             {
