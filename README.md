@@ -128,6 +128,7 @@ if (activity.Type == ActivityTypes.Message)
 ```
 
 ### Version 2
+* Wir können die Reihenfolge und die gestellten Fragen aber auch beeinflussen:
 
 ```cs
 public class SimpleConferenceDialog
@@ -157,8 +158,14 @@ public class SimpleConferenceDialog
 }
 ```
 
+Auch mittels Attributen über den einzelnen Properties kann Einfluss genommen werden, zB in *Models/ScheduleQuery*:
+```cs
+[Prompt("Please enter the begin time of the talk")]
+public string Time { get; set; }
+```
+### Version 3: Hero Cards
+Anstatt einer Textnachricht könnte am Schluss auch eine *HeroCard* angezeigt werden.
 
-### Hero Cards
 ```cs
 var card = new HeroCard()
 {
