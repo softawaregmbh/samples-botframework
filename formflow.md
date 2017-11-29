@@ -90,3 +90,24 @@ Auch mittels Attributen über den einzelnen Properties kann Einfluss genommen we
 public string Time { get; set; }
 ```
 
+Einzelne Felder können nur unter bestimmten Voraussetzungen abgefragt oder validiert werden.
+
+```cs
+.Field(nameof(ScheduleQuery.Time), null, (q, v) =>
+{
+    var result = new ValidateResult();
+
+    result.IsValid = (DateTime.TryParseExact((string)v, "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out var dt));
+
+    if (result.IsValid)
+    {
+        result.Value = (string)v;
+    }
+    else
+    {
+        result.Feedback = "Which time? (HH:MM)";
+    }
+
+    return Task.FromResult(result);
+})
+```
