@@ -29,3 +29,6 @@ Anleitung zur Registrierung und Veröffentlichung eines Bots.
 Ein Bot kann in verschiedensten Kommunikations-Channels veröffentlicht werden.
 
 [mehr](channels.md)
+
+## Zusätzliche Referenzen
+* [dev.botframework.com](https://dev.botframework.com/)
