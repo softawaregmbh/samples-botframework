@@ -1,4 +1,4 @@
-#LUIS - Language Understanding Intelligent Service
+# LUIS - Language Understanding Intelligent Service
 
 ## Anmeldung
 * Anmeldung unter [luis.ai](https://www.luis.ai)
